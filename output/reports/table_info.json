@@ -1,0 +1,8 @@
+{
+  "table_name": "default.eco_cross_page_preagg_pt1m_4cust",
+  "total_columns": 222,
+  "int_columns": 179,
+  "float_columns": 0,
+  "metadata_columns": 43,
+  "created_at": "2025-10-13T19:58:12.997535"
+}

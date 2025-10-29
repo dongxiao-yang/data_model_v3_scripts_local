@@ -1,0 +1,40 @@
+{
+  "customers": [
+    {
+      "customer_id": 1960181009,
+      "total_raw_rows": 40838038,
+      "total_agg_rows": 36853616,
+      "total_chunks": 1440,
+      "avg_db_agg_seconds": 2.6868694444444445,
+      "avg_python_transform_seconds": 1.09044375,
+      "avg_db_insert_seconds": 0.8184965277777778,
+      "avg_total_seconds": 4.673038888888889,
+      "avg_compression_ratio": 1.1054236111111113,
+      "total_time_seconds": 6729.338
+    },
+    {
+      "customer_id": 1960181845,
+      "total_raw_rows": 589733243,
+      "total_agg_rows": 538592040,
+      "total_chunks": 1440,
+      "avg_db_agg_seconds": 36.320243749999996,
+      "avg_python_transform_seconds": 15.184647916666666,
+      "avg_db_insert_seconds": 13.105611111111113,
+      "avg_total_seconds": 65.82163125000001,
+      "avg_compression_ratio": 1.0940208333333334,
+      "total_time_seconds": 94783.264
+    },
+    {
+      "customer_id": 1960183305,
+      "total_raw_rows": 23976571,
+      "total_agg_rows": 14552444,
+      "total_chunks": 1440,
+      "avg_db_agg_seconds": 1.4638263888888887,
+      "avg_python_transform_seconds": 0.4258166666666667,
+      "avg_db_insert_seconds": 0.3406763888888889,
+      "avg_total_seconds": 2.2621458333333333,
+      "avg_compression_ratio": 1.6317847222222222,
+      "total_time_seconds": 3257.562
+    }
+  ]
+}

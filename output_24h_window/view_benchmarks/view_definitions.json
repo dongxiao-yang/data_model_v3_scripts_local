@@ -1,0 +1,1935 @@
+{
+  "metadata": {
+    "phase": "Phase 1: View Generation",
+    "total_views": 3,
+    "customers": [
+      "Intigral",
+      "SlingTV",
+      "NFL",
+      "Zee"
+    ],
+    "target_table": "default.eco_cross_page_preagg_pt1m_4cust",
+    "target_database": "rccp301-34a.iad6.prod.conviva.com:8123"
+  },
+  "views": [
+    {
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "view_name": "eco_cross_page_customer_1960181009_view",
+      "ddl": "CREATE VIEW eco_cross_page_customer_1960181009_view AS\nSELECT\n    timestampMs,\n    customerId,\n    clientId,\n    sessionId,\n    inSession,\n    userSessionId,\n    inUserSession,\n    platform,\n    platformSubcategory,\n    appName,\n    appBuild,\n    appVersion,\n    browserName,\n    browserVersion,\n    userId,\n    deviceManufacturer,\n    deviceMarketingName,\n    deviceModel,\n    deviceHardwareType,\n    deviceName,\n    deviceCategory,\n    deviceOperatingSystem,\n    deviceOperatingSystemVersion,\n    deviceOperatingSystemFamily,\n    country,\n    state,\n    city,\n    countryIso,\n    sub1Iso,\n    sub2Iso,\n    cityGid,\n    dma,\n    postalCode,\n    isp,\n    netSpeed,\n    sensorVersion,\n    appType,\n    asn,\n    timezoneOffsetMins,\n    connType,\n    watermarkMs,\n    partitionId,\n    retentionDate,\n    int1 AS `12569_16370_failure`,\n    int2 AS `12569_16370_success`,\n    int3 AS `12572_16902_failure`,\n    int4 AS `12572_16902_success`,\n    int5 AS `13188_17035_failure`,\n    int6 AS `13188_17035_success`,\n    int7 AS `14053_17935_failure`,\n    int8 AS `14053_17935_success`,\n    int9 AS `5xx_to_app_background_failed`,\n    int10 AS `5xx_to_app_background_success`,\n    int11 AS `6715_10053_failure`,\n    int12 AS `6715_10053_success`,\n    int13 AS `anr_to_appstartup_failed`,\n    int14 AS `anr_to_appstartup_success`,\n    int15 AS `anr_to_session_end_failed`,\n    int16 AS `anr_to_session_end_success`,\n    int17 AS `app_crash_to_appstartup_failed`,\n    int18 AS `app_crash_to_appstartup_success`,\n    int19 AS `app_crash_to_session_end_failed`,\n    int20 AS `app_crash_to_session_end_success`,\n    int21 AS `app_startup_time`,\n    int22 AS `event_count`,\n    int23 AS `f_260_304_error`,\n    int24 AS `f_260_304_failure`,\n    int25 AS `f_260_304_success`,\n    int26 AS `f_260_304_total_duration`,\n    int27 AS `f_3203_3322_error`,\n    int28 AS `f_3203_3322_failure`,\n    int29 AS `f_3203_3322_success`,\n    int30 AS `f_3203_3322_total_duration`,\n    int31 AS `f_3213_4219_error`,\n    int32 AS `f_3213_4219_failure`,\n    int33 AS `f_3213_4219_success`,\n    int34 AS `f_3213_4219_total_duration`,\n    int35 AS `f_4287_4441_error`,\n    int36 AS `f_4287_4441_failure`,\n    int37 AS `f_4287_4441_success`,\n    int38 AS `f_4287_4441_total_duration`,\n    int39 AS `f_4288_4442_error`,\n    int40 AS `f_4288_4442_failure`,\n    int41 AS `f_4288_4442_success`,\n    int42 AS `f_4288_4442_total_duration`,\n    int43 AS `f_8458_9478_error`,\n    int44 AS `f_8458_9478_failure`,\n    int45 AS `f_8458_9478_network_request_failure_count`,\n    int46 AS `f_8458_9478_network_request_failure_duration`,\n    int47 AS `f_8458_9478_network_request_success_count`,\n    int48 AS `f_8458_9478_network_request_success_duration`,\n    int49 AS `f_8458_9478_success`,\n    int50 AS `f_8458_9478_total_duration`,\n    int51 AS `f_8459_9479_error`,\n    int52 AS `f_8459_9479_failure`,\n    int53 AS `f_8459_9479_network_request_failure_count`,\n    int54 AS `f_8459_9479_network_request_failure_duration`,\n    int55 AS `f_8459_9479_network_request_success_count`,\n    int56 AS `f_8459_9479_network_request_success_duration`,\n    int57 AS `f_8459_9479_success`,\n    int58 AS `f_8459_9479_total_duration`,\n    int59 AS `f_8461_9481_error`,\n    int60 AS `f_8461_9481_failure`,\n    int61 AS `f_8461_9481_network_request_failure_count`,\n    int62 AS `f_8461_9481_network_request_failure_duration`,\n    int63 AS `f_8461_9481_network_request_success_count`,\n    int64 AS `f_8461_9481_network_request_success_duration`,\n    int65 AS `f_8461_9481_success`,\n    int66 AS `f_8461_9481_total_duration`,\n    int67 AS `f_8462_9482_error`,\n    int68 AS `f_8462_9482_failure`,\n    int69 AS `f_8462_9482_network_request_failure_count`,\n    int70 AS `f_8462_9482_network_request_failure_duration`,\n    int71 AS `f_8462_9482_network_request_success_count`,\n    int72 AS `f_8462_9482_network_request_success_duration`,\n    int73 AS `f_8462_9482_success`,\n    int74 AS `f_8462_9482_total_duration`,\n    int75 AS `f_8463_9483_error`,\n    int76 AS `f_8463_9483_failure`,\n    int77 AS `f_8463_9483_network_request_failure_count`,\n    int78 AS `f_8463_9483_network_request_failure_duration`,\n    int79 AS `f_8463_9483_network_request_success_count`,\n    int80 AS `f_8463_9483_network_request_success_duration`,\n    int81 AS `f_8463_9483_success`,\n    int82 AS `f_8463_9483_total_duration`,\n    int83 AS `f_8464_9484_error`,\n    int84 AS `f_8464_9484_failure`,\n    int85 AS `f_8464_9484_network_request_failure_count`,\n    int86 AS `f_8464_9484_network_request_failure_duration`,\n    int87 AS `f_8464_9484_network_request_success_count`,\n    int88 AS `f_8464_9484_network_request_success_duration`,\n    int89 AS `f_8464_9484_success`,\n    int90 AS `f_8464_9484_total_duration`,\n    int91 AS `f_8465_9486_error`,\n    int92 AS `f_8465_9486_failure`,\n    int93 AS `f_8465_9486_network_request_failure_count`,\n    int94 AS `f_8465_9486_network_request_failure_duration`,\n    int95 AS `f_8465_9486_network_request_success_count`,\n    int96 AS `f_8465_9486_network_request_success_duration`,\n    int97 AS `f_8465_9486_success`,\n    int98 AS `f_8465_9486_total_duration`,\n    int99 AS `f_8466_9487_error`,\n    int100 AS `f_8466_9487_failure`,\n    int101 AS `f_8466_9487_network_request_failure_count`,\n    int102 AS `f_8466_9487_network_request_failure_duration`,\n    int103 AS `f_8466_9487_network_request_success_count`,\n    int104 AS `f_8466_9487_network_request_success_duration`,\n    int105 AS `f_8466_9487_success`,\n    int106 AS `f_8466_9487_total_duration`,\n    int107 AS `f_8467_9488_error`,\n    int108 AS `f_8467_9488_failure`,\n    int109 AS `f_8467_9488_network_request_failure_count`,\n    int110 AS `f_8467_9488_network_request_failure_duration`,\n    int111 AS `f_8467_9488_network_request_success_count`,\n    int112 AS `f_8467_9488_network_request_success_duration`,\n    int113 AS `f_8467_9488_success`,\n    int114 AS `f_8467_9488_total_duration`,\n    int115 AS `f_8468_9489_error`,\n    int116 AS `f_8468_9489_failure`,\n    int117 AS `f_8468_9489_network_request_failure_count`,\n    int118 AS `f_8468_9489_network_request_failure_duration`,\n    int119 AS `f_8468_9489_network_request_success_count`,\n    int120 AS `f_8468_9489_network_request_success_duration`,\n    int121 AS `f_8468_9489_success`,\n    int122 AS `f_8468_9489_total_duration`,\n    int123 AS `has_first_video_attempted`,\n    int124 AS `has_rage_click`,\n    int125 AS `user_event_count`,\n    int126 AS `user_session_active_count`,\n    int127 AS `user_session_active_time`\nFROM default.eco_cross_page_preagg_pt1m_4cust\nWHERE customerId = 1960181009",
+      "column_count": {
+        "standard": 43,
+        "int_metrics": 127,
+        "float_metrics": 0,
+        "total": 170
+      },
+      "column_mappings": [
+        {
+          "metric_key": "12569_16370_failure",
+          "primitive_column": "int1",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "12569_16370_success",
+          "primitive_column": "int2",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "12572_16902_failure",
+          "primitive_column": "int3",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "12572_16902_success",
+          "primitive_column": "int4",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "13188_17035_failure",
+          "primitive_column": "int5",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "13188_17035_success",
+          "primitive_column": "int6",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14053_17935_failure",
+          "primitive_column": "int7",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14053_17935_success",
+          "primitive_column": "int8",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "5xx_to_app_background_failed",
+          "primitive_column": "int9",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "5xx_to_app_background_success",
+          "primitive_column": "int10",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "6715_10053_failure",
+          "primitive_column": "int11",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "6715_10053_success",
+          "primitive_column": "int12",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_appstartup_failed",
+          "primitive_column": "int13",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_appstartup_success",
+          "primitive_column": "int14",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_session_end_failed",
+          "primitive_column": "int15",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_session_end_success",
+          "primitive_column": "int16",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_appstartup_failed",
+          "primitive_column": "int17",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_appstartup_success",
+          "primitive_column": "int18",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_session_end_failed",
+          "primitive_column": "int19",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_session_end_success",
+          "primitive_column": "int20",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_startup_time",
+          "primitive_column": "int21",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "event_count",
+          "primitive_column": "int22",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_260_304_error",
+          "primitive_column": "int23",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_260_304_failure",
+          "primitive_column": "int24",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_260_304_success",
+          "primitive_column": "int25",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_260_304_total_duration",
+          "primitive_column": "int26",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3203_3322_error",
+          "primitive_column": "int27",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3203_3322_failure",
+          "primitive_column": "int28",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3203_3322_success",
+          "primitive_column": "int29",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3203_3322_total_duration",
+          "primitive_column": "int30",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3213_4219_error",
+          "primitive_column": "int31",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3213_4219_failure",
+          "primitive_column": "int32",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3213_4219_success",
+          "primitive_column": "int33",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_3213_4219_total_duration",
+          "primitive_column": "int34",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4287_4441_error",
+          "primitive_column": "int35",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4287_4441_failure",
+          "primitive_column": "int36",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4287_4441_success",
+          "primitive_column": "int37",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4287_4441_total_duration",
+          "primitive_column": "int38",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4288_4442_error",
+          "primitive_column": "int39",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4288_4442_failure",
+          "primitive_column": "int40",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4288_4442_success",
+          "primitive_column": "int41",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4288_4442_total_duration",
+          "primitive_column": "int42",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_error",
+          "primitive_column": "int43",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_failure",
+          "primitive_column": "int44",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_network_request_failure_count",
+          "primitive_column": "int45",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_network_request_failure_duration",
+          "primitive_column": "int46",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_network_request_success_count",
+          "primitive_column": "int47",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_network_request_success_duration",
+          "primitive_column": "int48",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_success",
+          "primitive_column": "int49",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8458_9478_total_duration",
+          "primitive_column": "int50",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_error",
+          "primitive_column": "int51",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_failure",
+          "primitive_column": "int52",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_network_request_failure_count",
+          "primitive_column": "int53",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_network_request_failure_duration",
+          "primitive_column": "int54",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_network_request_success_count",
+          "primitive_column": "int55",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_network_request_success_duration",
+          "primitive_column": "int56",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_success",
+          "primitive_column": "int57",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8459_9479_total_duration",
+          "primitive_column": "int58",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_error",
+          "primitive_column": "int59",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_failure",
+          "primitive_column": "int60",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_network_request_failure_count",
+          "primitive_column": "int61",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_network_request_failure_duration",
+          "primitive_column": "int62",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_network_request_success_count",
+          "primitive_column": "int63",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_network_request_success_duration",
+          "primitive_column": "int64",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_success",
+          "primitive_column": "int65",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8461_9481_total_duration",
+          "primitive_column": "int66",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_error",
+          "primitive_column": "int67",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_failure",
+          "primitive_column": "int68",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_network_request_failure_count",
+          "primitive_column": "int69",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_network_request_failure_duration",
+          "primitive_column": "int70",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_network_request_success_count",
+          "primitive_column": "int71",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_network_request_success_duration",
+          "primitive_column": "int72",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_success",
+          "primitive_column": "int73",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8462_9482_total_duration",
+          "primitive_column": "int74",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_error",
+          "primitive_column": "int75",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_failure",
+          "primitive_column": "int76",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_network_request_failure_count",
+          "primitive_column": "int77",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_network_request_failure_duration",
+          "primitive_column": "int78",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_network_request_success_count",
+          "primitive_column": "int79",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_network_request_success_duration",
+          "primitive_column": "int80",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_success",
+          "primitive_column": "int81",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8463_9483_total_duration",
+          "primitive_column": "int82",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_error",
+          "primitive_column": "int83",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_failure",
+          "primitive_column": "int84",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_network_request_failure_count",
+          "primitive_column": "int85",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_network_request_failure_duration",
+          "primitive_column": "int86",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_network_request_success_count",
+          "primitive_column": "int87",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_network_request_success_duration",
+          "primitive_column": "int88",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_success",
+          "primitive_column": "int89",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8464_9484_total_duration",
+          "primitive_column": "int90",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_error",
+          "primitive_column": "int91",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_failure",
+          "primitive_column": "int92",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_network_request_failure_count",
+          "primitive_column": "int93",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_network_request_failure_duration",
+          "primitive_column": "int94",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_network_request_success_count",
+          "primitive_column": "int95",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_network_request_success_duration",
+          "primitive_column": "int96",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_success",
+          "primitive_column": "int97",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8465_9486_total_duration",
+          "primitive_column": "int98",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_error",
+          "primitive_column": "int99",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_failure",
+          "primitive_column": "int100",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_network_request_failure_count",
+          "primitive_column": "int101",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_network_request_failure_duration",
+          "primitive_column": "int102",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_network_request_success_count",
+          "primitive_column": "int103",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_network_request_success_duration",
+          "primitive_column": "int104",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_success",
+          "primitive_column": "int105",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8466_9487_total_duration",
+          "primitive_column": "int106",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_error",
+          "primitive_column": "int107",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_failure",
+          "primitive_column": "int108",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_network_request_failure_count",
+          "primitive_column": "int109",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_network_request_failure_duration",
+          "primitive_column": "int110",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_network_request_success_count",
+          "primitive_column": "int111",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_network_request_success_duration",
+          "primitive_column": "int112",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_success",
+          "primitive_column": "int113",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8467_9488_total_duration",
+          "primitive_column": "int114",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_error",
+          "primitive_column": "int115",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_failure",
+          "primitive_column": "int116",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_network_request_failure_count",
+          "primitive_column": "int117",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_network_request_failure_duration",
+          "primitive_column": "int118",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_network_request_success_count",
+          "primitive_column": "int119",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_network_request_success_duration",
+          "primitive_column": "int120",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_success",
+          "primitive_column": "int121",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8468_9489_total_duration",
+          "primitive_column": "int122",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_first_video_attempted",
+          "primitive_column": "int123",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_rage_click",
+          "primitive_column": "int124",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_event_count",
+          "primitive_column": "int125",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_session_active_count",
+          "primitive_column": "int126",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_session_active_time",
+          "primitive_column": "int127",
+          "column_type": "int"
+        }
+      ],
+      "verification": {
+        "row_count": 36853616,
+        "has_data": true
+      }
+    },
+    {
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "view_name": "eco_cross_page_customer_1960181845_view",
+      "ddl": "CREATE VIEW eco_cross_page_customer_1960181845_view AS\nSELECT\n    timestampMs,\n    customerId,\n    clientId,\n    sessionId,\n    inSession,\n    userSessionId,\n    inUserSession,\n    platform,\n    platformSubcategory,\n    appName,\n    appBuild,\n    appVersion,\n    browserName,\n    browserVersion,\n    userId,\n    deviceManufacturer,\n    deviceMarketingName,\n    deviceModel,\n    deviceHardwareType,\n    deviceName,\n    deviceCategory,\n    deviceOperatingSystem,\n    deviceOperatingSystemVersion,\n    deviceOperatingSystemFamily,\n    country,\n    state,\n    city,\n    countryIso,\n    sub1Iso,\n    sub2Iso,\n    cityGid,\n    dma,\n    postalCode,\n    isp,\n    netSpeed,\n    sensorVersion,\n    appType,\n    asn,\n    timezoneOffsetMins,\n    connType,\n    watermarkMs,\n    partitionId,\n    retentionDate,\n    int1 AS `44397_54079_total_duration`,\n    int2 AS `4756_59793_total_duration`,\n    int3 AS `55199_59854_failure`,\n    int4 AS `55199_59854_success`,\n    int5 AS `58991_64046_total_duration`,\n    int6 AS `5xx_to_app_background_failed`,\n    int7 AS `5xx_to_app_background_success`,\n    int8 AS `anr_to_appstartup_failed`,\n    int9 AS `anr_to_appstartup_success`,\n    int10 AS `anr_to_session_end_failed`,\n    int11 AS `anr_to_session_end_success`,\n    int12 AS `app_crash_to_appstartup_failed`,\n    int13 AS `app_crash_to_appstartup_success`,\n    int14 AS `app_crash_to_session_end_failed`,\n    int15 AS `app_crash_to_session_end_success`,\n    int16 AS `app_startup_time`,\n    int17 AS `duration_before_first_video_ms`,\n    int18 AS `event_count`,\n    int19 AS `f_202_363_error`,\n    int20 AS `f_202_363_failure`,\n    int21 AS `f_202_363_network_request_failure_count`,\n    int22 AS `f_202_363_network_request_failure_duration`,\n    int23 AS `f_202_363_network_request_success_count`,\n    int24 AS `f_202_363_network_request_success_duration`,\n    int25 AS `f_202_363_success`,\n    int26 AS `f_202_363_total_duration`,\n    int27 AS `f_268_395_error`,\n    int28 AS `f_268_395_failure`,\n    int29 AS `f_268_395_network_request_failure_count`,\n    int30 AS `f_268_395_network_request_failure_duration`,\n    int31 AS `f_268_395_network_request_success_count`,\n    int32 AS `f_268_395_network_request_success_duration`,\n    int33 AS `f_268_395_success`,\n    int34 AS `f_268_395_total_duration`,\n    int35 AS `f_4458_4631_failure`,\n    int36 AS `f_4458_4631_success`,\n    int37 AS `f_4458_4631_total_duration`,\n    int38 AS `f_5510_6111_failure`,\n    int39 AS `f_5510_6111_success`,\n    int40 AS `f_5510_6111_total_duration`,\n    int41 AS `f_6576_7411_error`,\n    int42 AS `f_6576_7411_failure`,\n    int43 AS `f_6576_7411_success`,\n    int44 AS `f_6576_7411_total_duration`,\n    int45 AS `f_7947_8916_error`,\n    int46 AS `f_7947_8916_failure`,\n    int47 AS `f_7947_8916_success`,\n    int48 AS `f_7947_8916_total_duration`,\n    int49 AS `f_7948_8917_error`,\n    int50 AS `f_7948_8917_failure`,\n    int51 AS `f_7948_8917_success`,\n    int52 AS `f_7948_8917_total_duration`,\n    int53 AS `f_7949_8919_error`,\n    int54 AS `f_7949_8919_failure`,\n    int55 AS `f_7949_8919_success`,\n    int56 AS `f_7949_8919_total_duration`,\n    int57 AS `f_8727_9853_error`,\n    int58 AS `f_8727_9853_failure`,\n    int59 AS `f_8727_9853_success`,\n    int60 AS `f_8727_9853_total_duration`,\n    int61 AS `has_excessive_app_restarts`,\n    int62 AS `has_first_video_attempted`,\n    int63 AS `has_multiple_use`,\n    int64 AS `has_rage_click`,\n    int65 AS `user_event_count`,\n    int66 AS `user_session_active_count`,\n    int67 AS `user_session_active_time`\nFROM default.eco_cross_page_preagg_pt1m_4cust\nWHERE customerId = 1960181845",
+      "column_count": {
+        "standard": 43,
+        "int_metrics": 67,
+        "float_metrics": 0,
+        "total": 110
+      },
+      "column_mappings": [
+        {
+          "metric_key": "44397_54079_total_duration",
+          "primitive_column": "int1",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "4756_59793_total_duration",
+          "primitive_column": "int2",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "55199_59854_failure",
+          "primitive_column": "int3",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "55199_59854_success",
+          "primitive_column": "int4",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58991_64046_total_duration",
+          "primitive_column": "int5",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "5xx_to_app_background_failed",
+          "primitive_column": "int6",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "5xx_to_app_background_success",
+          "primitive_column": "int7",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_appstartup_failed",
+          "primitive_column": "int8",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_appstartup_success",
+          "primitive_column": "int9",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_session_end_failed",
+          "primitive_column": "int10",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_session_end_success",
+          "primitive_column": "int11",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_appstartup_failed",
+          "primitive_column": "int12",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_appstartup_success",
+          "primitive_column": "int13",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_session_end_failed",
+          "primitive_column": "int14",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_session_end_success",
+          "primitive_column": "int15",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_startup_time",
+          "primitive_column": "int16",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "duration_before_first_video_ms",
+          "primitive_column": "int17",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "event_count",
+          "primitive_column": "int18",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_error",
+          "primitive_column": "int19",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_failure",
+          "primitive_column": "int20",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_network_request_failure_count",
+          "primitive_column": "int21",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_network_request_failure_duration",
+          "primitive_column": "int22",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_network_request_success_count",
+          "primitive_column": "int23",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_network_request_success_duration",
+          "primitive_column": "int24",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_success",
+          "primitive_column": "int25",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_202_363_total_duration",
+          "primitive_column": "int26",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_error",
+          "primitive_column": "int27",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_failure",
+          "primitive_column": "int28",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_network_request_failure_count",
+          "primitive_column": "int29",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_network_request_failure_duration",
+          "primitive_column": "int30",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_network_request_success_count",
+          "primitive_column": "int31",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_network_request_success_duration",
+          "primitive_column": "int32",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_success",
+          "primitive_column": "int33",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_268_395_total_duration",
+          "primitive_column": "int34",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4458_4631_failure",
+          "primitive_column": "int35",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4458_4631_success",
+          "primitive_column": "int36",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4458_4631_total_duration",
+          "primitive_column": "int37",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_5510_6111_failure",
+          "primitive_column": "int38",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_5510_6111_success",
+          "primitive_column": "int39",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_5510_6111_total_duration",
+          "primitive_column": "int40",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6576_7411_error",
+          "primitive_column": "int41",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6576_7411_failure",
+          "primitive_column": "int42",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6576_7411_success",
+          "primitive_column": "int43",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6576_7411_total_duration",
+          "primitive_column": "int44",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7947_8916_error",
+          "primitive_column": "int45",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7947_8916_failure",
+          "primitive_column": "int46",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7947_8916_success",
+          "primitive_column": "int47",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7947_8916_total_duration",
+          "primitive_column": "int48",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7948_8917_error",
+          "primitive_column": "int49",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7948_8917_failure",
+          "primitive_column": "int50",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7948_8917_success",
+          "primitive_column": "int51",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7948_8917_total_duration",
+          "primitive_column": "int52",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7949_8919_error",
+          "primitive_column": "int53",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7949_8919_failure",
+          "primitive_column": "int54",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7949_8919_success",
+          "primitive_column": "int55",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7949_8919_total_duration",
+          "primitive_column": "int56",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8727_9853_error",
+          "primitive_column": "int57",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8727_9853_failure",
+          "primitive_column": "int58",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8727_9853_success",
+          "primitive_column": "int59",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8727_9853_total_duration",
+          "primitive_column": "int60",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_excessive_app_restarts",
+          "primitive_column": "int61",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_first_video_attempted",
+          "primitive_column": "int62",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_multiple_use",
+          "primitive_column": "int63",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_rage_click",
+          "primitive_column": "int64",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_event_count",
+          "primitive_column": "int65",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_session_active_count",
+          "primitive_column": "int66",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_session_active_time",
+          "primitive_column": "int67",
+          "column_type": "int"
+        }
+      ],
+      "verification": {
+        "row_count": 538592040,
+        "has_data": true
+      }
+    },
+    {
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "view_name": "eco_cross_page_customer_1960183305_view",
+      "ddl": "CREATE VIEW eco_cross_page_customer_1960183305_view AS\nSELECT\n    timestampMs,\n    customerId,\n    clientId,\n    sessionId,\n    inSession,\n    userSessionId,\n    inUserSession,\n    platform,\n    platformSubcategory,\n    appName,\n    appBuild,\n    appVersion,\n    browserName,\n    browserVersion,\n    userId,\n    deviceManufacturer,\n    deviceMarketingName,\n    deviceModel,\n    deviceHardwareType,\n    deviceName,\n    deviceCategory,\n    deviceOperatingSystem,\n    deviceOperatingSystemVersion,\n    deviceOperatingSystemFamily,\n    country,\n    state,\n    city,\n    countryIso,\n    sub1Iso,\n    sub2Iso,\n    cityGid,\n    dma,\n    postalCode,\n    isp,\n    netSpeed,\n    sensorVersion,\n    appType,\n    asn,\n    timezoneOffsetMins,\n    connType,\n    watermarkMs,\n    partitionId,\n    retentionDate,\n    int1 AS `10778_14461_failure`,\n    int2 AS `10778_14461_success`,\n    int3 AS `10779_14462_failure`,\n    int4 AS `10779_14462_success`,\n    int5 AS `10780_14463_total_duration`,\n    int6 AS `14095_17981_failure`,\n    int7 AS `14095_17981_success`,\n    int8 AS `14722_18632_total_duration`,\n    int9 AS `14842_18761_failure`,\n    int10 AS `14842_18761_success`,\n    int11 AS `16290_20268_total_duration`,\n    int12 AS `16304_20284_failure`,\n    int13 AS `16304_20284_success`,\n    int14 AS `16305_20285_failure`,\n    int15 AS `16305_20285_success`,\n    int16 AS `16448_20449_failure`,\n    int17 AS `16448_20449_success`,\n    int18 AS `16449_20450_total_duration`,\n    int19 AS `16450_20451_failure`,\n    int20 AS `16450_20451_success`,\n    int21 AS `16451_20452_failure`,\n    int22 AS `16451_20452_success`,\n    int23 AS `16557_20569_failure`,\n    int24 AS `16557_20569_success`,\n    int25 AS `16558_20570_failure`,\n    int26 AS `16558_20570_success`,\n    int27 AS `16559_20571_total_duration`,\n    int28 AS `17167_21200_total_duration`,\n    int29 AS `17168_21201_total_duration`,\n    int30 AS `17264_21303_failure`,\n    int31 AS `17264_21303_success`,\n    int32 AS `17265_21304_failure`,\n    int33 AS `17265_21304_success`,\n    int34 AS `17266_21305_failure`,\n    int35 AS `17266_21305_success`,\n    int36 AS `17267_21306_failure`,\n    int37 AS `17267_21306_success`,\n    int38 AS `17268_21308_total_duration`,\n    int39 AS `17269_21309_total_duration`,\n    int40 AS `17735_21792_total_duration`,\n    int41 AS `17736_21793_total_duration`,\n    int42 AS `17737_21794_total_duration`,\n    int43 AS `19096_23208_total_duration`,\n    int44 AS `19103_23218_total_duration`,\n    int45 AS `32884_37349_failure`,\n    int46 AS `32884_37349_success`,\n    int47 AS `33003_37351_failure`,\n    int48 AS `33003_37351_success`,\n    int49 AS `52298_56859_failure`,\n    int50 AS `52298_56859_success`,\n    int51 AS `54945_59589_failure`,\n    int52 AS `54945_59589_success`,\n    int53 AS `55615_63293_failure`,\n    int54 AS `55615_63293_success`,\n    int55 AS `56147_60842_failure`,\n    int56 AS `56147_60842_success`,\n    int57 AS `56148_60845_failure`,\n    int58 AS `56148_60845_success`,\n    int59 AS `56149_60846_failure`,\n    int60 AS `56149_60846_success`,\n    int61 AS `58351_63269_failure`,\n    int62 AS `58351_63269_success`,\n    int63 AS `58352_63654_failure`,\n    int64 AS `58352_63654_success`,\n    int65 AS `58374_63298_failure`,\n    int66 AS `58374_63298_success`,\n    int67 AS `58378_63304_total_duration`,\n    int68 AS `58381_63308_total_duration`,\n    int69 AS `58382_63311_total_duration`,\n    int70 AS `58383_63312_total_duration`,\n    int71 AS `58548_63510_failure`,\n    int72 AS `58548_63510_success`,\n    int73 AS `58666_63684_total_duration`,\n    int74 AS `58669_63679_failure`,\n    int75 AS `58669_63679_success`,\n    int76 AS `5xx_to_app_background_failed`,\n    int77 AS `5xx_to_app_background_success`,\n    int78 AS `65246_70811_failure`,\n    int79 AS `65246_70811_success`,\n    int80 AS `65248_70813_failure`,\n    int81 AS `65248_70813_success`,\n    int82 AS `7687_11132_failure`,\n    int83 AS `7687_11132_success`,\n    int84 AS `7688_11133_failure`,\n    int85 AS `7688_11133_success`,\n    int86 AS `7689_11134_total_duration`,\n    int87 AS `anr_to_appstartup_failed`,\n    int88 AS `anr_to_appstartup_success`,\n    int89 AS `anr_to_session_end_failed`,\n    int90 AS `anr_to_session_end_success`,\n    int91 AS `app_crash_to_appstartup_failed`,\n    int92 AS `app_crash_to_appstartup_success`,\n    int93 AS `app_crash_to_session_end_failed`,\n    int94 AS `app_crash_to_session_end_success`,\n    int95 AS `app_startup_time`,\n    int96 AS `duration_before_first_video_ms`,\n    int97 AS `event_count`,\n    int98 AS `f_172_299_error`,\n    int99 AS `f_172_299_failure`,\n    int100 AS `f_172_299_success`,\n    int101 AS `f_172_299_total_duration`,\n    int102 AS `f_182_7199_error`,\n    int103 AS `f_182_7199_failure`,\n    int104 AS `f_182_7199_success`,\n    int105 AS `f_182_7199_total_duration`,\n    int106 AS `f_183_7200_error`,\n    int107 AS `f_183_7200_failure`,\n    int108 AS `f_183_7200_network_request_failure_count`,\n    int109 AS `f_183_7200_network_request_failure_duration`,\n    int110 AS `f_183_7200_network_request_success_count`,\n    int111 AS `f_183_7200_network_request_success_duration`,\n    int112 AS `f_183_7200_success`,\n    int113 AS `f_183_7200_total_duration`,\n    int114 AS `f_263_313_error`,\n    int115 AS `f_263_313_failure`,\n    int116 AS `f_263_313_success`,\n    int117 AS `f_263_313_total_duration`,\n    int118 AS `f_4363_7198_error`,\n    int119 AS `f_4363_7198_failure`,\n    int120 AS `f_4363_7198_network_request_failure_count`,\n    int121 AS `f_4363_7198_network_request_failure_duration`,\n    int122 AS `f_4363_7198_network_request_success_count`,\n    int123 AS `f_4363_7198_network_request_success_duration`,\n    int124 AS `f_4363_7198_success`,\n    int125 AS `f_4363_7198_total_duration`,\n    int126 AS `f_4755_4976_error`,\n    int127 AS `f_4755_4976_failure`,\n    int128 AS `f_4755_4976_network_request_failure_count`,\n    int129 AS `f_4755_4976_network_request_failure_duration`,\n    int130 AS `f_4755_4976_network_request_success_count`,\n    int131 AS `f_4755_4976_network_request_success_duration`,\n    int132 AS `f_4755_4976_success`,\n    int133 AS `f_4755_4976_total_duration`,\n    int134 AS `f_6424_7216_error`,\n    int135 AS `f_6424_7216_failure`,\n    int136 AS `f_6424_7216_success`,\n    int137 AS `f_6424_7216_total_duration`,\n    int138 AS `f_6469_7269_failure`,\n    int139 AS `f_6469_7269_network_request_failure_count`,\n    int140 AS `f_6469_7269_network_request_failure_duration`,\n    int141 AS `f_6469_7269_network_request_success_count`,\n    int142 AS `f_6469_7269_network_request_success_duration`,\n    int143 AS `f_6469_7269_success`,\n    int144 AS `f_6469_7269_total_duration`,\n    int145 AS `f_7940_8905_error`,\n    int146 AS `f_7940_8905_failure`,\n    int147 AS `f_7940_8905_network_request_failure_count`,\n    int148 AS `f_7940_8905_network_request_failure_duration`,\n    int149 AS `f_7940_8905_network_request_success_count`,\n    int150 AS `f_7940_8905_network_request_success_duration`,\n    int151 AS `f_7940_8905_success`,\n    int152 AS `f_7940_8905_total_duration`,\n    int153 AS `f_8185_9170_error`,\n    int154 AS `f_8185_9170_failure`,\n    int155 AS `f_8185_9170_network_request_failure_count`,\n    int156 AS `f_8185_9170_network_request_failure_duration`,\n    int157 AS `f_8185_9170_network_request_success_count`,\n    int158 AS `f_8185_9170_network_request_success_duration`,\n    int159 AS `f_8185_9170_success`,\n    int160 AS `f_8185_9170_total_duration`,\n    int161 AS `f_8595_9664_error`,\n    int162 AS `f_8595_9664_failure`,\n    int163 AS `f_8595_9664_network_request_failure_count`,\n    int164 AS `f_8595_9664_network_request_failure_duration`,\n    int165 AS `f_8595_9664_network_request_success_count`,\n    int166 AS `f_8595_9664_network_request_success_duration`,\n    int167 AS `f_8595_9664_success`,\n    int168 AS `f_8595_9664_total_duration`,\n    int169 AS `f_8979_10207_error`,\n    int170 AS `f_8979_10207_failure`,\n    int171 AS `f_8979_10207_success`,\n    int172 AS `f_8979_10207_total_duration`,\n    int173 AS `has_excessive_app_restarts`,\n    int174 AS `has_first_video_attempted`,\n    int175 AS `has_multiple_use`,\n    int176 AS `has_rage_click`,\n    int177 AS `user_event_count`,\n    int178 AS `user_session_active_count`,\n    int179 AS `user_session_active_time`\nFROM default.eco_cross_page_preagg_pt1m_4cust\nWHERE customerId = 1960183305",
+      "column_count": {
+        "standard": 43,
+        "int_metrics": 179,
+        "float_metrics": 0,
+        "total": 222
+      },
+      "column_mappings": [
+        {
+          "metric_key": "10778_14461_failure",
+          "primitive_column": "int1",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "10778_14461_success",
+          "primitive_column": "int2",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "10779_14462_failure",
+          "primitive_column": "int3",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "10779_14462_success",
+          "primitive_column": "int4",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "10780_14463_total_duration",
+          "primitive_column": "int5",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14095_17981_failure",
+          "primitive_column": "int6",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14095_17981_success",
+          "primitive_column": "int7",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14722_18632_total_duration",
+          "primitive_column": "int8",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14842_18761_failure",
+          "primitive_column": "int9",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "14842_18761_success",
+          "primitive_column": "int10",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16290_20268_total_duration",
+          "primitive_column": "int11",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16304_20284_failure",
+          "primitive_column": "int12",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16304_20284_success",
+          "primitive_column": "int13",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16305_20285_failure",
+          "primitive_column": "int14",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16305_20285_success",
+          "primitive_column": "int15",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16448_20449_failure",
+          "primitive_column": "int16",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16448_20449_success",
+          "primitive_column": "int17",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16449_20450_total_duration",
+          "primitive_column": "int18",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16450_20451_failure",
+          "primitive_column": "int19",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16450_20451_success",
+          "primitive_column": "int20",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16451_20452_failure",
+          "primitive_column": "int21",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16451_20452_success",
+          "primitive_column": "int22",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16557_20569_failure",
+          "primitive_column": "int23",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16557_20569_success",
+          "primitive_column": "int24",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16558_20570_failure",
+          "primitive_column": "int25",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16558_20570_success",
+          "primitive_column": "int26",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "16559_20571_total_duration",
+          "primitive_column": "int27",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17167_21200_total_duration",
+          "primitive_column": "int28",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17168_21201_total_duration",
+          "primitive_column": "int29",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17264_21303_failure",
+          "primitive_column": "int30",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17264_21303_success",
+          "primitive_column": "int31",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17265_21304_failure",
+          "primitive_column": "int32",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17265_21304_success",
+          "primitive_column": "int33",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17266_21305_failure",
+          "primitive_column": "int34",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17266_21305_success",
+          "primitive_column": "int35",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17267_21306_failure",
+          "primitive_column": "int36",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17267_21306_success",
+          "primitive_column": "int37",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17268_21308_total_duration",
+          "primitive_column": "int38",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17269_21309_total_duration",
+          "primitive_column": "int39",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17735_21792_total_duration",
+          "primitive_column": "int40",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17736_21793_total_duration",
+          "primitive_column": "int41",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "17737_21794_total_duration",
+          "primitive_column": "int42",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "19096_23208_total_duration",
+          "primitive_column": "int43",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "19103_23218_total_duration",
+          "primitive_column": "int44",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "32884_37349_failure",
+          "primitive_column": "int45",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "32884_37349_success",
+          "primitive_column": "int46",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "33003_37351_failure",
+          "primitive_column": "int47",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "33003_37351_success",
+          "primitive_column": "int48",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "52298_56859_failure",
+          "primitive_column": "int49",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "52298_56859_success",
+          "primitive_column": "int50",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "54945_59589_failure",
+          "primitive_column": "int51",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "54945_59589_success",
+          "primitive_column": "int52",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "55615_63293_failure",
+          "primitive_column": "int53",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "55615_63293_success",
+          "primitive_column": "int54",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "56147_60842_failure",
+          "primitive_column": "int55",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "56147_60842_success",
+          "primitive_column": "int56",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "56148_60845_failure",
+          "primitive_column": "int57",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "56148_60845_success",
+          "primitive_column": "int58",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "56149_60846_failure",
+          "primitive_column": "int59",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "56149_60846_success",
+          "primitive_column": "int60",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58351_63269_failure",
+          "primitive_column": "int61",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58351_63269_success",
+          "primitive_column": "int62",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58352_63654_failure",
+          "primitive_column": "int63",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58352_63654_success",
+          "primitive_column": "int64",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58374_63298_failure",
+          "primitive_column": "int65",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58374_63298_success",
+          "primitive_column": "int66",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58378_63304_total_duration",
+          "primitive_column": "int67",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58381_63308_total_duration",
+          "primitive_column": "int68",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58382_63311_total_duration",
+          "primitive_column": "int69",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58383_63312_total_duration",
+          "primitive_column": "int70",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58548_63510_failure",
+          "primitive_column": "int71",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58548_63510_success",
+          "primitive_column": "int72",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58666_63684_total_duration",
+          "primitive_column": "int73",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58669_63679_failure",
+          "primitive_column": "int74",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "58669_63679_success",
+          "primitive_column": "int75",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "5xx_to_app_background_failed",
+          "primitive_column": "int76",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "5xx_to_app_background_success",
+          "primitive_column": "int77",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "65246_70811_failure",
+          "primitive_column": "int78",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "65246_70811_success",
+          "primitive_column": "int79",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "65248_70813_failure",
+          "primitive_column": "int80",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "65248_70813_success",
+          "primitive_column": "int81",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "7687_11132_failure",
+          "primitive_column": "int82",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "7687_11132_success",
+          "primitive_column": "int83",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "7688_11133_failure",
+          "primitive_column": "int84",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "7688_11133_success",
+          "primitive_column": "int85",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "7689_11134_total_duration",
+          "primitive_column": "int86",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_appstartup_failed",
+          "primitive_column": "int87",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_appstartup_success",
+          "primitive_column": "int88",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_session_end_failed",
+          "primitive_column": "int89",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "anr_to_session_end_success",
+          "primitive_column": "int90",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_appstartup_failed",
+          "primitive_column": "int91",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_appstartup_success",
+          "primitive_column": "int92",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_session_end_failed",
+          "primitive_column": "int93",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_crash_to_session_end_success",
+          "primitive_column": "int94",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "app_startup_time",
+          "primitive_column": "int95",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "duration_before_first_video_ms",
+          "primitive_column": "int96",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "event_count",
+          "primitive_column": "int97",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_172_299_error",
+          "primitive_column": "int98",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_172_299_failure",
+          "primitive_column": "int99",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_172_299_success",
+          "primitive_column": "int100",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_172_299_total_duration",
+          "primitive_column": "int101",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_182_7199_error",
+          "primitive_column": "int102",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_182_7199_failure",
+          "primitive_column": "int103",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_182_7199_success",
+          "primitive_column": "int104",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_182_7199_total_duration",
+          "primitive_column": "int105",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_error",
+          "primitive_column": "int106",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_failure",
+          "primitive_column": "int107",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_network_request_failure_count",
+          "primitive_column": "int108",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_network_request_failure_duration",
+          "primitive_column": "int109",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_network_request_success_count",
+          "primitive_column": "int110",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_network_request_success_duration",
+          "primitive_column": "int111",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_success",
+          "primitive_column": "int112",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_183_7200_total_duration",
+          "primitive_column": "int113",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_263_313_error",
+          "primitive_column": "int114",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_263_313_failure",
+          "primitive_column": "int115",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_263_313_success",
+          "primitive_column": "int116",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_263_313_total_duration",
+          "primitive_column": "int117",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_error",
+          "primitive_column": "int118",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_failure",
+          "primitive_column": "int119",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_network_request_failure_count",
+          "primitive_column": "int120",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_network_request_failure_duration",
+          "primitive_column": "int121",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_network_request_success_count",
+          "primitive_column": "int122",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_network_request_success_duration",
+          "primitive_column": "int123",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_success",
+          "primitive_column": "int124",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4363_7198_total_duration",
+          "primitive_column": "int125",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_error",
+          "primitive_column": "int126",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_failure",
+          "primitive_column": "int127",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_network_request_failure_count",
+          "primitive_column": "int128",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_network_request_failure_duration",
+          "primitive_column": "int129",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_network_request_success_count",
+          "primitive_column": "int130",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_network_request_success_duration",
+          "primitive_column": "int131",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_success",
+          "primitive_column": "int132",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_4755_4976_total_duration",
+          "primitive_column": "int133",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6424_7216_error",
+          "primitive_column": "int134",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6424_7216_failure",
+          "primitive_column": "int135",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6424_7216_success",
+          "primitive_column": "int136",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6424_7216_total_duration",
+          "primitive_column": "int137",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_failure",
+          "primitive_column": "int138",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_network_request_failure_count",
+          "primitive_column": "int139",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_network_request_failure_duration",
+          "primitive_column": "int140",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_network_request_success_count",
+          "primitive_column": "int141",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_network_request_success_duration",
+          "primitive_column": "int142",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_success",
+          "primitive_column": "int143",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_6469_7269_total_duration",
+          "primitive_column": "int144",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_error",
+          "primitive_column": "int145",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_failure",
+          "primitive_column": "int146",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_network_request_failure_count",
+          "primitive_column": "int147",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_network_request_failure_duration",
+          "primitive_column": "int148",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_network_request_success_count",
+          "primitive_column": "int149",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_network_request_success_duration",
+          "primitive_column": "int150",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_success",
+          "primitive_column": "int151",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_7940_8905_total_duration",
+          "primitive_column": "int152",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_error",
+          "primitive_column": "int153",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_failure",
+          "primitive_column": "int154",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_network_request_failure_count",
+          "primitive_column": "int155",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_network_request_failure_duration",
+          "primitive_column": "int156",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_network_request_success_count",
+          "primitive_column": "int157",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_network_request_success_duration",
+          "primitive_column": "int158",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_success",
+          "primitive_column": "int159",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8185_9170_total_duration",
+          "primitive_column": "int160",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_error",
+          "primitive_column": "int161",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_failure",
+          "primitive_column": "int162",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_network_request_failure_count",
+          "primitive_column": "int163",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_network_request_failure_duration",
+          "primitive_column": "int164",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_network_request_success_count",
+          "primitive_column": "int165",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_network_request_success_duration",
+          "primitive_column": "int166",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_success",
+          "primitive_column": "int167",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8595_9664_total_duration",
+          "primitive_column": "int168",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8979_10207_error",
+          "primitive_column": "int169",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8979_10207_failure",
+          "primitive_column": "int170",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8979_10207_success",
+          "primitive_column": "int171",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "f_8979_10207_total_duration",
+          "primitive_column": "int172",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_excessive_app_restarts",
+          "primitive_column": "int173",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_first_video_attempted",
+          "primitive_column": "int174",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_multiple_use",
+          "primitive_column": "int175",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "has_rage_click",
+          "primitive_column": "int176",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_event_count",
+          "primitive_column": "int177",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_session_active_count",
+          "primitive_column": "int178",
+          "column_type": "int"
+        },
+        {
+          "metric_key": "user_session_active_time",
+          "primitive_column": "int179",
+          "column_type": "int"
+        }
+      ],
+      "verification": {
+        "row_count": 14552444,
+        "has_data": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "data-model-v3-transformation"
+version = "0.1.0"
+description = "ClickHouse data model transformation for ECO tables"
+authors = ["Zaid Humayun <hzaid@conviva.com>"]
+packages = [{include = "src"}]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+clickhouse-connect = "^0.7.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^23.0.0"
+isort = "^5.0.0"
+
+[tool.poetry.scripts]
+transform = "run_transformation_pipeline:run_pipeline"
+benchmark = "run_benchmark_pipeline:run_pipeline"
+view-benchmark = "run_view_benchmark_pipeline:run_pipeline"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

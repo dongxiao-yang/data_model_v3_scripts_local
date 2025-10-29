@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "phase": "Phase 1: Metric Discovery",
+    "total_metrics": 12,
+    "customers": [
+      1960181009,
+      1960181845,
+      1960183305
+    ],
+    "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+    "source_table": "default.eco_cross_page_flow_pt1m_local_20251008_3cust"
+  },
+  "mappings": [
+    {
+      "customer_id": 1960181009,
+      "metric_key": "f_8458_9478_success",
+      "flowid": "f_8458_9478",
+      "source_map_column": "metricIntGroup2",
+      "target_physical_column": "int49",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181009,
+      "metric_key": "f_8458_9478_total_duration",
+      "flowid": "f_8458_9478",
+      "source_map_column": "metricIntGroup2",
+      "target_physical_column": "int50",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181009,
+      "metric_key": "app_startup_time",
+      "flowid": "app_startup",
+      "source_map_column": "metricIntGroup13",
+      "target_physical_column": "int21",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181009,
+      "metric_key": "event_count",
+      "flowid": "session",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int22",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181845,
+      "metric_key": "f_202_363_success",
+      "flowid": "f_202_363",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int25",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181845,
+      "metric_key": "f_202_363_total_duration",
+      "flowid": "f_202_363",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int26",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181845,
+      "metric_key": "app_startup_time",
+      "flowid": "app_startup",
+      "source_map_column": "metricIntGroup13",
+      "target_physical_column": "int16",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960181845,
+      "metric_key": "event_count",
+      "flowid": "session",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int18",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960183305,
+      "metric_key": "f_183_7200_success",
+      "flowid": "f_183_7200",
+      "source_map_column": "metricIntGroup14",
+      "target_physical_column": "int112",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960183305,
+      "metric_key": "f_183_7200_total_duration",
+      "flowid": "f_183_7200",
+      "source_map_column": "metricIntGroup14",
+      "target_physical_column": "int113",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960183305,
+      "metric_key": "app_startup_time",
+      "flowid": "app_startup",
+      "source_map_column": "metricIntGroup13",
+      "target_physical_column": "int95",
+      "has_multiple_flowids": false
+    },
+    {
+      "customer_id": 1960183305,
+      "metric_key": "event_count",
+      "flowid": "session",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int97",
+      "has_multiple_flowids": false
+    }
+  ]
+}

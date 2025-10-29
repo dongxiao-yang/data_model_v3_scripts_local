@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "phase": "Phase 2: Query Generation",
+    "total_queries": 18,
+    "total_metrics": 9,
+    "access_types": [
+      "direct_table",
+      "through_view"
+    ],
+    "dimensions": [
+      "deviceCategory",
+      "countryIso",
+      "platform"
+    ],
+    "target_table": "default.eco_cross_page_preagg_pt1m_4cust",
+    "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+    "comparison": "Direct table access (intN columns) vs View access (metric names)"
+  },
+  "queries": [
+    {
+      "metric_number": 1,
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "f_8458_9478_success",
+      "flowid": "f_8458_9478",
+      "source_map_column": "metricIntGroup2",
+      "target_physical_column": "int49",
+      "view_name": "eco_cross_page_customer_1960181009_view",
+      "direct_table_query_file": "direct_table_1960181009_f_8458_9478_success.sql",
+      "through_view_query_file": "through_view_1960181009_f_8458_9478_success.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 2,
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "f_8458_9478_total_duration",
+      "flowid": "f_8458_9478",
+      "source_map_column": "metricIntGroup2",
+      "target_physical_column": "int50",
+      "view_name": "eco_cross_page_customer_1960181009_view",
+      "direct_table_query_file": "direct_table_1960181009_f_8458_9478_total_duration.sql",
+      "through_view_query_file": "through_view_1960181009_f_8458_9478_total_duration.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 3,
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "app_startup_time",
+      "flowid": "app_startup",
+      "source_map_column": "metricIntGroup13",
+      "target_physical_column": "int21",
+      "view_name": "eco_cross_page_customer_1960181009_view",
+      "direct_table_query_file": "direct_table_1960181009_app_startup_time.sql",
+      "through_view_query_file": "through_view_1960181009_app_startup_time.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 4,
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "f_202_363_success",
+      "flowid": "f_202_363",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int25",
+      "view_name": "eco_cross_page_customer_1960181845_view",
+      "direct_table_query_file": "direct_table_1960181845_f_202_363_success.sql",
+      "through_view_query_file": "through_view_1960181845_f_202_363_success.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 5,
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "f_202_363_total_duration",
+      "flowid": "f_202_363",
+      "source_map_column": "metricIntGroup15",
+      "target_physical_column": "int26",
+      "view_name": "eco_cross_page_customer_1960181845_view",
+      "direct_table_query_file": "direct_table_1960181845_f_202_363_total_duration.sql",
+      "through_view_query_file": "through_view_1960181845_f_202_363_total_duration.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 6,
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "app_startup_time",
+      "flowid": "app_startup",
+      "source_map_column": "metricIntGroup13",
+      "target_physical_column": "int16",
+      "view_name": "eco_cross_page_customer_1960181845_view",
+      "direct_table_query_file": "direct_table_1960181845_app_startup_time.sql",
+      "through_view_query_file": "through_view_1960181845_app_startup_time.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 7,
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "f_183_7200_success",
+      "flowid": "f_183_7200",
+      "source_map_column": "metricIntGroup14",
+      "target_physical_column": "int112",
+      "view_name": "eco_cross_page_customer_1960183305_view",
+      "direct_table_query_file": "direct_table_1960183305_f_183_7200_success.sql",
+      "through_view_query_file": "through_view_1960183305_f_183_7200_success.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 8,
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "f_183_7200_total_duration",
+      "flowid": "f_183_7200",
+      "source_map_column": "metricIntGroup14",
+      "target_physical_column": "int113",
+      "view_name": "eco_cross_page_customer_1960183305_view",
+      "direct_table_query_file": "direct_table_1960183305_f_183_7200_total_duration.sql",
+      "through_view_query_file": "through_view_1960183305_f_183_7200_total_duration.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    },
+    {
+      "metric_number": 9,
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "app_startup_time",
+      "flowid": "app_startup",
+      "source_map_column": "metricIntGroup13",
+      "target_physical_column": "int95",
+      "view_name": "eco_cross_page_customer_1960183305_view",
+      "direct_table_query_file": "direct_table_1960183305_app_startup_time.sql",
+      "through_view_query_file": "through_view_1960183305_app_startup_time.sql",
+      "date_range": "2025-10-08 00:00:00 to 2025-10-09 00:00:00",
+      "dimensions": [
+        "deviceCategory",
+        "countryIso",
+        "platform"
+      ]
+    }
+  ]
+}

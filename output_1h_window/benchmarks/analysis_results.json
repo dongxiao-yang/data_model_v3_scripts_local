@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-16T10:51:05.570358",
+    "total_measurements": 2100,
+    "metrics_tested": 12,
+    "date_range": "2025-10-08 00:00:00 to 2025-10-08 06:00:00",
+    "old_schema_table": "default.eco_cross_page_flow_pt1m_local_20251008_3cust",
+    "new_schema_table": "default.rui_eco_cross_page_preagg_pt1m_1h"
+  },
+  "overall_stats": {
+    "old_schema": {
+      "total_runs": 1050,
+      "avg": 0.5006217566185764,
+      "min": 0.014410285279154778,
+      "max": 4.327843598090112,
+      "median": 0.07611364359036088,
+      "stdev": 0.9298941623626691
+    },
+    "new_schema": {
+      "total_runs": 1050,
+      "avg": 0.08773814815052208,
+      "min": 0.012284214608371258,
+      "max": 0.3288066629320383,
+      "median": 0.025077248457819223,
+      "stdev": 0.09782280642001646
+    },
+    "overall_speedup": 5.705861898973731,
+    "improvement_percent": 82.4741639789799
+  },
+  "speedups": [
+    {
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "f_8458_9478_success",
+      "old_avg": 0.015526954419910907,
+      "new_avg": 0.013005332686007023,
+      "speedup": 1.1938913670864415,
+      "improvement_percent": 16.240285542864065
+    },
+    {
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "f_8458_9478_total_duration",
+      "old_avg": 0.01618832167237997,
+      "new_avg": 0.01305295191705227,
+      "speedup": 1.2402038845505652,
+      "improvement_percent": 19.36809645114215
+    },
+    {
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "app_startup_time",
+      "old_avg": 0.03793880132958293,
+      "new_avg": 0.023555583618581295,
+      "speedup": 1.6106075716016544,
+      "improvement_percent": 37.911629273817525
+    },
+    {
+      "customer_id": 1960181009,
+      "customer_name": "Intigral",
+      "metric_key": "event_count",
+      "old_avg": 0.11839727625250816,
+      "new_avg": 0.026388249858282507,
+      "speedup": 4.486742276898166,
+      "improvement_percent": 77.71211408444584
+    },
+    {
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "f_202_363_success",
+      "old_avg": 0.41148569494485854,
+      "new_avg": 0.15157450545579196,
+      "speedup": 2.7147421243928913,
+      "improvement_percent": 63.16408873555037
+    },
+    {
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "f_202_363_total_duration",
+      "old_avg": 0.41534239146858454,
+      "new_avg": 0.15552864396944643,
+      "speedup": 2.6705202390254135,
+      "improvement_percent": 62.55411266364555
+    },
+    {
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "app_startup_time",
+      "old_avg": 0.735502351578325,
+      "new_avg": 0.20382353292778135,
+      "speedup": 3.6085251835906886,
+      "improvement_percent": 72.28784755203114
+    },
+    {
+      "customer_id": 1960181845,
+      "customer_name": "SlingTV",
+      "metric_key": "event_count",
+      "old_avg": 1.964279154073447,
+      "new_avg": 0.256305494941771,
+      "speedup": 7.663819905693803,
+      "improvement_percent": 86.95167667944474
+    },
+    {
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "f_183_7200_success",
+      "old_avg": 0.04504586247727275,
+      "new_avg": 0.017267992552369833,
+      "speedup": 2.6086334205124917,
+      "improvement_percent": 61.66575218515984
+    },
+    {
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "f_183_7200_total_duration",
+      "old_avg": 0.0452193709090352,
+      "new_avg": 0.01799569796770811,
+      "speedup": 2.512787833524316,
+      "improvement_percent": 60.20356407896771
+    },
+    {
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "app_startup_time",
+      "old_avg": 0.04979033799842,
+      "new_avg": 0.02274180678650737,
+      "speedup": 2.189374769816461,
+      "improvement_percent": 54.32485959981024
+    },
+    {
+      "customer_id": 1960183305,
+      "customer_name": "NFL",
+      "metric_key": "event_count",
+      "old_avg": 0.10257777022197842,
+      "new_avg": 0.023295021019876003,
+      "speedup": 4.403420376159181,
+      "improvement_percent": 77.29038078185405
+    }
+  ],
+  "customer_analysis": {
+    "Intigral": {
+      "metrics_count": 4,
+      "avg_speedup": 2.1328612750342066,
+      "min_speedup": 1.1938913670864415,
+      "max_speedup": 4.486742276898166,
+      "metrics": [
+        {
+          "customer_id": 1960181009,
+          "customer_name": "Intigral",
+          "metric_key": "f_8458_9478_success",
+          "old_avg": 0.015526954419910907,
+          "new_avg": 0.013005332686007023,
+          "speedup": 1.1938913670864415,
+          "improvement_percent": 16.240285542864065
+        },
+        {
+          "customer_id": 1960181009,
+          "customer_name": "Intigral",
+          "metric_key": "f_8458_9478_total_duration",
+          "old_avg": 0.01618832167237997,
+          "new_avg": 0.01305295191705227,
+          "speedup": 1.2402038845505652,
+          "improvement_percent": 19.36809645114215
+        },
+        {
+          "customer_id": 1960181009,
+          "customer_name": "Intigral",
+          "metric_key": "app_startup_time",
+          "old_avg": 0.03793880132958293,
+          "new_avg": 0.023555583618581295,
+          "speedup": 1.6106075716016544,
+          "improvement_percent": 37.911629273817525
+        },
+        {
+          "customer_id": 1960181009,
+          "customer_name": "Intigral",
+          "metric_key": "event_count",
+          "old_avg": 0.11839727625250816,
+          "new_avg": 0.026388249858282507,
+          "speedup": 4.486742276898166,
+          "improvement_percent": 77.71211408444584
+        }
+      ]
+    },
+    "SlingTV": {
+      "metrics_count": 4,
+      "avg_speedup": 4.164401863175699,
+      "min_speedup": 2.6705202390254135,
+      "max_speedup": 7.663819905693803,
+      "metrics": [
+        {
+          "customer_id": 1960181845,
+          "customer_name": "SlingTV",
+          "metric_key": "f_202_363_success",
+          "old_avg": 0.41148569494485854,
+          "new_avg": 0.15157450545579196,
+          "speedup": 2.7147421243928913,
+          "improvement_percent": 63.16408873555037
+        },
+        {
+          "customer_id": 1960181845,
+          "customer_name": "SlingTV",
+          "metric_key": "f_202_363_total_duration",
+          "old_avg": 0.41534239146858454,
+          "new_avg": 0.15552864396944643,
+          "speedup": 2.6705202390254135,
+          "improvement_percent": 62.55411266364555
+        },
+        {
+          "customer_id": 1960181845,
+          "customer_name": "SlingTV",
+          "metric_key": "app_startup_time",
+          "old_avg": 0.735502351578325,
+          "new_avg": 0.20382353292778135,
+          "speedup": 3.6085251835906886,
+          "improvement_percent": 72.28784755203114
+        },
+        {
+          "customer_id": 1960181845,
+          "customer_name": "SlingTV",
+          "metric_key": "event_count",
+          "old_avg": 1.964279154073447,
+          "new_avg": 0.256305494941771,
+          "speedup": 7.663819905693803,
+          "improvement_percent": 86.95167667944474
+        }
+      ]
+    },
+    "NFL": {
+      "metrics_count": 4,
+      "avg_speedup": 2.9285541000031126,
+      "min_speedup": 2.189374769816461,
+      "max_speedup": 4.403420376159181,
+      "metrics": [
+        {
+          "customer_id": 1960183305,
+          "customer_name": "NFL",
+          "metric_key": "f_183_7200_success",
+          "old_avg": 0.04504586247727275,
+          "new_avg": 0.017267992552369833,
+          "speedup": 2.6086334205124917,
+          "improvement_percent": 61.66575218515984
+        },
+        {
+          "customer_id": 1960183305,
+          "customer_name": "NFL",
+          "metric_key": "f_183_7200_total_duration",
+          "old_avg": 0.0452193709090352,
+          "new_avg": 0.01799569796770811,
+          "speedup": 2.512787833524316,
+          "improvement_percent": 60.20356407896771
+        },
+        {
+          "customer_id": 1960183305,
+          "customer_name": "NFL",
+          "metric_key": "app_startup_time",
+          "old_avg": 0.04979033799842,
+          "new_avg": 0.02274180678650737,
+          "speedup": 2.189374769816461,
+          "improvement_percent": 54.32485959981024
+        },
+        {
+          "customer_id": 1960183305,
+          "customer_name": "NFL",
+          "metric_key": "event_count",
+          "old_avg": 0.10257777022197842,
+          "new_avg": 0.023295021019876003,
+          "speedup": 4.403420376159181,
+          "improvement_percent": 77.29038078185405
+        }
+      ]
+    }
+  },
+  "metric_type_analysis": {
+    "success_count": {
+      "metrics_count": 3,
+      "avg_speedup": 2.172422303997275,
+      "min_speedup": 1.1938913670864415,
+      "max_speedup": 2.7147421243928913
+    },
+    "duration": {
+      "metrics_count": 6,
+      "avg_speedup": 2.3053365803515167,
+      "min_speedup": 1.2402038845505652,
+      "max_speedup": 3.6085251835906886
+    },
+    "other": {
+      "metrics_count": 3,
+      "avg_speedup": 5.517994186250383,
+      "min_speedup": 4.403420376159181,
+      "max_speedup": 7.663819905693803
+    }
+  }
+}

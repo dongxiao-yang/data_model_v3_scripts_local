@@ -1,0 +1,44 @@
+{
+  "started_at": "2025-10-13T18:20:41.635124",
+  "phases": {
+    "key_discovery": {
+      "status": "SUCCESS",
+      "customers": {
+        "1960181009": {
+          "int_keys": 127,
+          "float_keys": 0
+        },
+        "1960181845": {
+          "int_keys": 67,
+          "float_keys": 0
+        },
+        "1960183305": {
+          "int_keys": 179,
+          "float_keys": 0
+        }
+      },
+      "max_int_columns": 179,
+      "max_float_columns": 0
+    },
+    "schema_generation": {
+      "status": "SUCCESS",
+      "total_columns": 222,
+      "int_columns": 179,
+      "float_columns": 0
+    },
+    "data_transformation": {
+      "status": "SUCCESS",
+      "customers": [
+        "1960181009",
+        "1960181845",
+        "1960183305"
+      ],
+      "source_rows_processed": 589998100,
+      "target_rows_inserted": 589998100,
+      "chunks_processed": 4320,
+      "errors": 0
+    }
+  },
+  "overall_success": true,
+  "completed_at": "2025-10-15T01:04:29.918120"
+}
